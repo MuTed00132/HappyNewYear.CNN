@@ -39,7 +39,7 @@ run imageStreaming.py
 
 #imageFile模式(影像從檔案來)  
 run imageFile.py   
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/iN_6Ya-e-IM&feature=youtu.be/0.jpg)](http://www.youtube.com/watch?v=iN_6Ya-e-IM&feature=youtu.be)
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/iN_6Ya-e-IM/0.jpg)](http://www.youtube.com/watch?v=iN_6Ya-e-IM)
 
 # 訓練模型
 按照data/train中的格式，要分幾類就開幾個資料夾，Keras imageGenerator會自動檔把資料夾名稱當類別名稱  
