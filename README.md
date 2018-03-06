@@ -44,7 +44,7 @@ sudo python imageFile.py
 
 # 訓練模型
 1.按照data/train中的格式，要分幾類就開幾個資料夾，Keras imageGenerator會自動檔把資料夾名稱當類別名稱  
-2.刪掉faces6.h5  
+2.刪掉已經訓練完的神經網路 faces6.h5  
 3.sudo python train.py  
 
 # 參考  
