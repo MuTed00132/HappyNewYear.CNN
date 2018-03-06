@@ -1,4 +1,4 @@
-# HappyNewYear-Ai :辨識您的親朋好友，並自動向他們祝賀新年
+# HappyNewYear.Ai :辨識您的親朋好友，並自動向他們祝賀新年快樂
 
 # 環境部屬
 #安裝Anaconda  
@@ -36,7 +36,8 @@ jupyter notebook --ip=0.0.0.0 --port=8888
 #Streaming模式(影像從相機來)  
 run imageStreaming.py  
 "https://www.youtube.com/watch?v=A3Z6aCFrGIo"
-![image](http://github.com/dataisfunny/HappyNewYearAI/raw/master/temp/show1)
+![image](http://github.com/dataisfunny/HappyNewYearAI/raw/master/temp/show1)  
+
 #imageFile模式(影像從檔案來)  
 run imageFile.py  
 "https://www.youtube.com/watch?v=iN_6Ya-e-IM&feature=youtu.be"  
@@ -47,4 +48,4 @@ run imageFile.py
 # 參考  
 1.BossSensor (經典)  
 2.Video Stream Processor (結合大數據打造高擴張的AI應用)  
-3.building-powerful-image-classification-models-using-very-little ()
+3.building-powerful-image-classification-models-using-very-little (基礎)
