@@ -38,8 +38,10 @@ run imageStreaming.py
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/A3Z6aCFrGIo/0.jpg)](http://www.youtube.com/watch?v=A3Z6aCFrGIo)
 
 #imageFile模式(影像從檔案來)  
-run imageFile.py  
-"https://www.youtube.com/watch?v=iN_6Ya-e-IM&feature=youtu.be"  
+run imageFile.py   
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/iN_6Ya-e-IM&feature/0.jpg)](http://www.youtube.com/watch?v=iN_6Ya-e-IM&feature)
+
+"https://www.youtube.com/watch?v=iN_6Ya-e-IM&feature=youtu.be"  
 ![image](http://github.com/dataisfunny/HappyNewYearAI/raw/master/temp/show2)
 # 訓練模型
 按照data/train中的格式，要分幾類就開幾個資料夾，Keras imageGenerator會自動檔把資料夾名稱當類別名稱  
