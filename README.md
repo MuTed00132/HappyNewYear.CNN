@@ -38,7 +38,7 @@ run imageStreaming.py
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/A3Z6aCFrGIo/0.jpg)](http://www.youtube.com/watch?v=A3Z6aCFrGIo)
 
 #imageFile模式(影像從檔案來)  
-run imageFile.py   
+run imageFile.py  
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/iN_6Ya-e-IM/0.jpg)](http://www.youtube.com/watch?v=iN_6Ya-e-IM)
 
 # 訓練模型
