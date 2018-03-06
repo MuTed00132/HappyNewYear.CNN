@@ -35,8 +35,7 @@ jupyter notebook --ip=0.0.0.0 --port=8888
 # 啟動程式
 #Streaming模式(影像從相機來)  
 run imageStreaming.py  
-"https://www.youtube.com/watch?v=A3Z6aCFrGIo"
-![image](http://github.com/dataisfunny/HappyNewYearAI/raw/master/temp/show1)  
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/A3Z6aCFrGIo/0.jpg)](http://www.youtube.com/watch?v=A3Z6aCFrGIo)
 
 #imageFile模式(影像從檔案來)  
 run imageFile.py  
