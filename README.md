@@ -12,15 +12,6 @@ conda create -n HappyNewYear python=3.5
 source activate HappyNewYear  
 
 #安裝package   
-conda install -c https://conda.anaconda.org/menpo opencv3  
-conda install -c conda-forge tensorflow  
-pip install jupyter  
-conda install libiconv  
-conda install pyqt=4  
-conda install pillow  
-pip install keras  
-pip install h5py  
-sudo apt update  
 sudo apt-get install libgtk2.0-0  
 pip install -r requirements.txt  
 
@@ -51,3 +42,15 @@ sudo python imageFile.py
 1.BossSensor (經典)  
 2.Video Stream Processor (結合大數據打造高擴張的AI應用)  
 3.building-powerful-image-classification-models-using-very-little (基礎)
+
+
+
+conda install -c https://conda.anaconda.org/menpo opencv3  
+conda install -c conda-forge tensorflow  
+pip install jupyter  
+conda install libiconv  
+conda install pyqt=4  
+conda install pillow  
+pip install keras  
+pip install h5py  
+sudo apt update  
