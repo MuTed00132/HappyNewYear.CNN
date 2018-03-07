@@ -7,7 +7,8 @@
 import tensorflow as tf
 import cv2, sys, json, time, numpy as np, wx
 from pygame import mixer
-cascPath = "/home/ray/anaconda3/pkgs/opencv3-3.2.0-np111py35_0/share/OpenCV/haarcascades/haarcascade_frontalface_default.xml"
+cascPath = "haarcascade_frontalface_default.xml"
+#cascPath = "/home/ray/anaconda3/pkgs/opencv3-3.2.0-np111py35_0/share/OpenCV/haarcascades/haarcascade_frontalface_default.xml"
 faceCascade = cv2.CascadeClassifier(cascPath)
 from train import load_model
 from train import Model

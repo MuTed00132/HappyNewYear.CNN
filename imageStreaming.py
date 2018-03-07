@@ -1,13 +1,14 @@
 
 # coding: utf-8
 
-# In[5]:
+# In[1]:
 
 
 #匯入所需函數
 import cv2, sys, json, time, numpy as np, tensorflow as tf
 from pygame import mixer
-cascPath = "/home/ray/anaconda3/pkgs/opencv3-3.2.0-np111py35_0/share/OpenCV/haarcascades/haarcascade_frontalface_default.xml"
+#cascPath = "/home/test/anaconda3/pkgs/opencv3-3.2.0-np111py35_0/share/OpenCV/haarcascades/haarcascade_frontalface_default.xml"
+cascPath = "haarcascade_frontalface_default.xml"
 faceCascade = cv2.CascadeClassifier(cascPath)
 from train import load_model, Model
 
@@ -23,7 +24,7 @@ model.load()
 mixer.init()
 
 
-# In[13]:
+# In[3]:
 
 
 # 攝影機連線
@@ -38,7 +39,7 @@ while(True):
     # Opencv內建的人臉辨識函式使需要灰階圖片故用cvtColor將BGR轉GRAY
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
   except :
-    print("NO image")
+    print("")
   #opencv3內建人臉識別功能函數
   faces = faceCascade.detectMultiScale(
     gray,
@@ -60,6 +61,7 @@ while(True):
         print("")
     else :
       try :
+           image = cv2.resize(image  ,(450,450),interpolation=cv2.INTER_CUBIC)
            #顯示圖片，看看顏色大小人臉辨識功能是否正常
            cv2.imshow('frame', image)   
            #因Opencv預設格式是BGR必須轉成RGB
