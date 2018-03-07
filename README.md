@@ -12,6 +12,7 @@ conda create -n HappyNewYear python=3.5
 source activate HappyNewYear  
 
 #安裝package   
+conda install -c https://conda.anaconda.org/menpo opencv3  
 sudo apt-get install libgtk2.0-0  
 pip install -r requirements.txt  
 
