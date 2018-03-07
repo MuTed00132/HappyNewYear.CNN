@@ -46,12 +46,4 @@ sudo python imageFile.py
 
 
 
-conda install -c https://conda.anaconda.org/menpo opencv3  
-conda install -c conda-forge tensorflow  
-pip install jupyter  
-conda install libiconv  
-conda install pyqt=4  
-conda install pillow  
-pip install keras  
-pip install h5py  
-sudo apt update  
+
