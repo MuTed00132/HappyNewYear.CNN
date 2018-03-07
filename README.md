@@ -14,7 +14,7 @@ source activate HappyNewYear
 #安裝package   
 conda install -c https://conda.anaconda.org/menpo opencv3  
 conda install -c conda-forge tensorflow  
-conda install jupyter  
+pip install jupyter  
 conda install libiconv  
 conda install pyqt=4  
 conda install pillow  
