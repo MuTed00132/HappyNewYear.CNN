@@ -17,7 +17,7 @@ sudo apt-get install libgtk2.0-0
 pip install -r requirements.txt  
 
 #調整Keras參數
-vi ~/.keras/keras.json   #開啟此檔
+vi ~/.keras/keras.json   #開啟此檔  
 channels_last 改成 channels_first  
 
 #(可選)設定jupyter   
