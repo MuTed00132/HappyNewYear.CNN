@@ -11,9 +11,11 @@ export PATH="$HOME/Anaconda3/bin:$PATH"
 conda create -n HappyNewYear python=3.5  
 source activate HappyNewYear  
 
-#安裝package   
+#安裝package
 conda install -c https://conda.anaconda.org/menpo opencv3  
 sudo apt-get install libgtk2.0-0  
+git clone https://github.com/dataisfunny/HappyNewYear.AI.git
+cd HappyNewYear  
 pip install -r requirements.txt  
 
 #調整Keras參數
