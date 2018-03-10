@@ -5,7 +5,6 @@ Author:Ray.Tseng
 #安裝Anaconda  
 wget https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh  
 bash Anaconda3-5.0.1-Linux-x86_64.sh  
-export PATH="$HOME/Anaconda3/bin:$PATH"  
 
 #建立virtualenv  
 conda create -n HappyNewYear python=3.5  
@@ -15,15 +14,26 @@ source activate HappyNewYear
 conda install -c https://conda.anaconda.org/menpo opencv3  
 sudo apt-get install libgtk2.0-0  
 git clone https://github.com/dataisfunny/HappyNewYear.AI.git
-cd HappyNewYear  
+cd  HappyNewYear.AI
+pip install keras 
 pip install -r requirements.txt  
 
 #調整Keras參數
-vi ~/.keras/keras.json   #開啟此檔  
-channels_last 改成 channels_first  
-
+mkdir ~/.keras
+cat >> ~/.keras/keras.json << EOF
+{
+    "backend": "tensorflow",
+    "epsilon": 1e-07,
+    "image_data_format": "channels_first",
+    "floatx": "float32"
+}
+EOF
+    
 #(可選)設定jupyter   
 jupyter-notebook --generate-config  
+cd ~
+sed -i 's/#c.NotebookApp.allow_password_change/c.NotebookApp.allow_password_change/g' ~/.jupyter/jupyter_notebook_config.py  
+
 jupyter notebook password  
 jupyter notebook --ip=0.0.0.0 --port=8888  
 
