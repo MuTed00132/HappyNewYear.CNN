@@ -5,7 +5,7 @@
 
 
 import tensorflow as tf
-import cv2, sys, json, time, numpy as np, wx
+import cv2, sys, json, time, numpy as np
 from pygame import mixer
 cascPath = "haarcascade_frontalface_default.xml"
 #cascPath = "/home/ray/anaconda3/pkgs/opencv3-3.2.0-np111py35_0/share/OpenCV/haarcascades/haarcascade_frontalface_default.xml"
@@ -58,7 +58,7 @@ class ImageWindow(QtGui.QWidget):
         frame = cv2.imread(show)
         temp = cv2.resize(frame ,(300,300),interpolation=cv2.INTER_CUBIC)
         #並將其中一份暫存到temp.jpg給QT的圖片顯示函數使用
-        cv2.imwrite("./temp.jpg", temp)
+        cv2.imwrite("./temp/temp.jpg", temp)
         #QT的圖片顯示函數去取剛剛透過OpenCV處理完的圖片
         self.LebalUI.setPixmap(QtGui.QPixmap("./temp/temp.jpg"))
         #將一開始讀到的Raw Image(frame)丟到OpenCV內建的人臉識別演算法，這套演算法只需使用灰階圖片故使用cvtColor轉置一份灰階圖片出來

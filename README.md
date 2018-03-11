@@ -12,13 +12,14 @@ source activate HappyNewYear
 
 #安裝package
 conda install -c https://conda.anaconda.org/menpo opencv3  
-sudo apt-get install libgtk2.0-0  
+conda install -c anaconda pyqt=4.11.4
+sudo apt-get install libgtk2.0-0 git python-wxtools  
 git clone https://github.com/dataisfunny/HappyNewYear.AI.git  
 cd  HappyNewYear.AI  
 pip install -r requirements.txt  
 
 #調整Keras參數
-mkdir ~/.keras
+mkdir ~/.keras  
 cat >> ~/.keras/keras.json << EOF
 {
     "backend": "tensorflow",
@@ -30,7 +31,6 @@ EOF
     
 #(可選)設定jupyter   
 jupyter-notebook --generate-config  
-cd ~
 sed -i 's/#c.NotebookApp.allow_password_change/c.NotebookApp.allow_password_change/g' ~/.jupyter/jupyter_notebook_config.py  
 
 jupyter notebook password  
