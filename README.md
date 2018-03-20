@@ -1,5 +1,5 @@
 # HappyNewYear.Ai :辨識您的親朋好友，並自動向他們祝賀新年快樂
-Author:R.T.
+Author:Ray.Tseng
 # 環境部屬
 #ubuntu16.04
 #安裝Anaconda  
