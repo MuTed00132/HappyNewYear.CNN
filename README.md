@@ -23,12 +23,12 @@ pip install -r requirements.txt
 mkdir ~/.keras  
 cat >> ~/.keras/keras.json << EOF  
 {  
-    "backend": "tensorflow",
-    "epsilon": 1e-07,
-    "image_data_format": "channels_first",
-    "floatx": "float32"
+    "backend": "tensorflow",  
+    "epsilon": 1e-07,  
+    "image_data_format": "channels_first",  
+    "floatx": "float32"  
 }  
-EOF
+EOF  
     
 #(可選)設定jupyter   
 jupyter-notebook --generate-config  
