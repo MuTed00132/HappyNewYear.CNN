@@ -13,6 +13,7 @@ source activate HappyNewYear
 #安裝package  
 conda install -c https://conda.anaconda.org/menpo opencv3  
 conda install -c anaconda pyqt=4.11.4  
+sudo apt-get update  
 sudo apt-get install libgtk2.0-0 git python-wxtools  
 git clone https://github.com/dataisfunny/HappyNewYear.AI.git  
 cd  HappyNewYear.AI  
