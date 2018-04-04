@@ -10,7 +10,7 @@ bash Anaconda3-5.0.1-Linux-x86_64.sh
 conda create -n HappyNewYear python=3.5  
 source activate HappyNewYear  
 
-#安裝package
+#安裝package  
 conda install -c https://conda.anaconda.org/menpo opencv3  
 conda install -c anaconda pyqt=4.11.4  
 sudo apt-get install libgtk2.0-0 git python-wxtools  
