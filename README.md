@@ -19,15 +19,15 @@ git clone https://github.com/dataisfunny/HappyNewYear.AI.git
 cd  HappyNewYear.AI  
 pip install -r requirements.txt  
 
-#調整Keras參數
+#調整Keras參數  
 mkdir ~/.keras  
-cat >> ~/.keras/keras.json << EOF
-{
+cat >> ~/.keras/keras.json << EOF  
+{  
     "backend": "tensorflow",
     "epsilon": 1e-07,
     "image_data_format": "channels_first",
     "floatx": "float32"
-}
+}  
 EOF
     
 #(可選)設定jupyter   
