@@ -1,4 +1,4 @@
-# HappyNewYear.Ai :辨識您的親朋好友，並自動向他們祝賀新年快樂
+# HappyNewYear.Ai :辨識您的親朋好友，並請Google小姐向他們祝賀新年快樂
 Author:Ray.Tseng
 # 程式架構
 ![avatar](softArc.png)
