@@ -48,7 +48,7 @@ class ImageWindow(QtGui.QWidget):
     def sayHappyNewYear(self):
         #創造AI類別 instance
         model = Model()
-        #載入深度學習後的殘餘矩陣
+        #載入CNN訓練後的結果
         model.load()
         #將全域變數+1後丟給區域變數
         self.count= self.count+1
