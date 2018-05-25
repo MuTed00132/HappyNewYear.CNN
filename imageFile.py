@@ -50,7 +50,7 @@ class ImageWindow(QtGui.QWidget):
         model = Model()
         #載入CNN訓練後的結果
         model.load()
-        #將全域變數+1後丟給區域變數
+        #我們要按照順序讀入圖片1~20故用一個count控制
         self.count= self.count+1
         count=str(self.count)
         #透過變數將圖片以OpenCV的函數取出並重置像素
