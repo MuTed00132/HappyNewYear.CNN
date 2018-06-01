@@ -32,7 +32,7 @@ cap = cv2.VideoCapture(0)
 
 while(True):
   # 如果攝影機是開啟，則讀取圖片並使用try catch包住避免跳出錯誤
-  cap.isOpened()
+  print(cap.isOpened())
   try :
     # 參數ret的值為True或False，代表有沒有讀到圖片，參數frame，是當前截取一幀的圖片
     ret, frame = cap.read()
