@@ -23,9 +23,7 @@ model.load()
 #初始化音檔撥放功能
 mixer.init()
 
-
 # In[3]:
-
 
 # 攝影機連線
 cap = cv2.VideoCapture(0)
@@ -58,7 +56,7 @@ while(True):
     #因為音檔有八秒鐘故使用t0、t1、waitTime三個參數控制分類頻率，
     t0 = int(time.time())
     if image is None :
-        print("")
+        print("image is None")
     else :
       try :
            image = cv2.resize(image  ,(450,450),interpolation=cv2.INTER_CUBIC)
@@ -68,12 +66,12 @@ while(True):
            image = image[:,:,::-1]
        
       except :
-           print("")
+           print(" error:", sys.exc_info()[0])
       else :
-           #圖片傳入我們開發的人臉"分類"AI並得到結果  ;OpenCV faceCascade的是人臉"辨識"AI，我們開發的是人臉"分類"AI
+           #圖片傳入我們開發的人臉"分類"AI並得到結果
            result = model.predict(image)
 
-      #如果辨識結果不為0即其他人，且大於waitTime間隔
+      #如果辨識結果不為0(nobody)，且大於waitTime則播放對應的音檔
       if result != 0 and t0-t1 > waitTime : 
            #撥放對應音檔
            videoPath = "./audio/"+audioList[result]+".mp3"
