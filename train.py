@@ -110,8 +110,9 @@ if __name__ == '__main__':
     fname=model.FILE_PATH
     if os.path.isfile(fname) is True: 
         #model.load()
-        print("")
+        print("模型已存在")
     else :
+        print("開始訓練")
         model.train(batch_size=32, classes=8,epochs=15)
         model.save()
         #model.load()
