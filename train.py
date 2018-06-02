@@ -115,7 +115,7 @@ if __name__ == '__main__':
         print("開始訓練")
         model.train(batch_size=32, classes=8,epochs=15)
         model.save()
-        #model.load()
+        
         
 
     
