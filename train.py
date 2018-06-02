@@ -43,7 +43,6 @@ class Model(object):
         self.model.add(Flatten())  # this converts our 3D feature maps to 1D feature vectors
         self.model.add(Dense(64))
         self.model.add(Activation('relu'))
-        self.model.add(Dropout(0.2))
         self.model.add(Dense(classes))
         self.model.add(Activation('softmax'))
         self.model.compile(loss='categorical_crossentropy',optimizer='adam',metrics=['accuracy'])
