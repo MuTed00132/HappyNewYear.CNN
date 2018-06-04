@@ -23,7 +23,7 @@ class Model(object):
 
     def train(self, batch_size, classes,epochs):
         print (classes)
-        self.batch_size=batch_size
+        #self.batch_size=batch_size
         self.epochs=epochs
         
         self.model = Sequential()
@@ -66,8 +66,8 @@ class Model(object):
             batch_size=batch_size,
             class_mode='categorical')
 
-        steps_per_epoch=5000 // self.batch_size
-        validation_steps=400 // self.batch_size
+        steps_per_epoch=5000 // batch_size
+        validation_steps=400 // batch_size
         
         
         self.model.fit_generator(
