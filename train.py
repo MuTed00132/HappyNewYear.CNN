@@ -71,7 +71,7 @@ class Model(object):
         
         
         self.model.fit_generator(
-            train_generator,
+            generator=train_generator,
             steps_per_epoch=steps_per_epoch,
             epochs=self.epochs,
             validation_data=validation_generator,
