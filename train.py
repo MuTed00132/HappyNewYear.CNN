@@ -40,7 +40,7 @@ class Model(object):
         self.model.add(Dropout(0.25))
 
         self.model.add(Flatten())  # this converts our 3D feature maps to 1D feature vectors
-        self.model.add(Dense(64))
+        self.model.add(Dense(1000))
         self.model.add(Activation('relu'))
         self.model.add(Dense(classes))
         self.model.add(Activation('softmax'))
