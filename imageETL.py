@@ -1,16 +1,16 @@
 
 # coding: utf-8
 
-# In[2]:
+# In[20]:
 
 
 import os, cv2, numpy as np, copy, sys
 
-filePath="/home/test/Downloads"
-
+filePath="../Downloads"
+destinationPath= "./destination"
 cascPath = "haarcascade_frontalface_default.xml" 
 faceCascade = cv2.CascadeClassifier(cascPath)
-
+print("Start") 
 for root, dirs, files in os.walk(filePath, topdown=False): 
     i=10  
     for name in files: 
@@ -31,18 +31,36 @@ for root, dirs, files in os.walk(filePath, topdown=False):
                  for k, e in enumerate(parameter):
                      image = frame[y-e[0]: y +h, x-e[1]: x+w]
                      fname = str(i) + str(j) +"."+ FilenameEX
-                     path=os.path.join(root,fname)
+                     path=os.path.join(destinationPath,fname)
                      try:
                        cv2.imwrite(path, image)
                      except:
                        print("副檔名錯誤") 
                      j=j+1
               
-for root, dirs, files in os.walk(filePath, topdown=False): 
+for root, dirs, files in os.walk(destinationPath, topdown=False): 
     for name in files: 
         size=os.path.getsize(os.path.join(root, name))
         if size < 3*1024 :
            os.remove(os.path.join(root, name)) 
 
-print("完成") 
+print("Finish") 
+
+
+# In[19]:
+
+
+
+destinationPath= "./destination"
+
+for root, dirs, files in os.walk(destinationPath, topdown=False): 
+    print(root)
+    print(files)
+    
+
+destinationPath= "../Downloads"
+
+for root, dirs, files in os.walk(destinationPath, topdown=False): 
+    print(root)
+    print(files)
 
