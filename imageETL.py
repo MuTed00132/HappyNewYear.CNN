@@ -29,7 +29,7 @@ for root, dirs, files in os.walk(filePath, topdown=False):
                      FilenameEX = name.split('.', 1 )[1]
                  parameter = np.array([[0],[0.35],[0.7]]) * np.array([h,w])
                  for k, e in enumerate(parameter):
-                     image = frame[y-e[0]: y +h, x-e[1]: x+w]
+                     image = frame[y-e[0]: y +h+e[0], x-e[1]: x+w+e[1]]
                      fname = str(i) + str(j) +"."+ FilenameEX
                      path=os.path.join(destinationPath,fname)
                      try:
@@ -45,22 +45,4 @@ for root, dirs, files in os.walk(destinationPath, topdown=False):
            os.remove(os.path.join(root, name)) 
 
 print("Finish") 
-
-
-# In[19]:
-
-
-
-destinationPath= "./destination"
-
-for root, dirs, files in os.walk(destinationPath, topdown=False): 
-    print(root)
-    print(files)
-    
-
-destinationPath= "../Downloads"
-
-for root, dirs, files in os.walk(destinationPath, topdown=False): 
-    print(root)
-    print(files)
 
