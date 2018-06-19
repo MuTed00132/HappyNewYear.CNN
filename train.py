@@ -23,8 +23,7 @@ class Model(object):
 
     def train(self, batch_size, classes,epochs):
         print (classes)
-        #self.batch_size=batch_size
-        #self.epochs=epochs
+
         self.model = Sequential()
         self.model.add(Conv2D(32, (3, 3), input_shape=(3, 150, 150)))
         self.model.add(Activation('relu'))
