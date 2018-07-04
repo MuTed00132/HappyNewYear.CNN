@@ -40,7 +40,7 @@ jupyter notebook --ip=0.0.0.0 --port=8888
 
 # 啟動程式
 #Streaming模式(影像從相機來)  
-#點一下圖會連到youtube有影音版   
+#點一下圖會連到youtube有影音版    
 sudo python imageStreaming.py    
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/A3Z6aCFrGIo/0.jpg)](http://www.youtube.com/watch?v=A3Z6aCFrGIo)
 
