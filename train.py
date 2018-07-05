@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[1]:
+# In[ ]:
 
 
 from keras.models import Sequential
@@ -72,7 +72,7 @@ class Model(object):
             validation_data=validation_generator,
             validation_steps=validation_steps)
         
-    def conversFormat(self, image):
+    def converFormat(self, image):
         image=cv2.resize(image,(self.size,self.size),interpolation=cv2.INTER_CUBIC)
         #print(image.shape)
         image=img_to_array(image)
