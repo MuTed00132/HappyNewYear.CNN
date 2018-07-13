@@ -80,7 +80,7 @@ class ImageWindow(QtGui.QWidget):
             #將臉譜丟到丟到我們訓練的人臉分類神經網路
             result=model.predict(image)
             #啟動對應的新年快樂MP3
-            videoPath = "./audio/"+self.audioList[result]+".mp3"
+            videoPath = "./audio/"+audioList[result]+".mp3"
             mixer.init()
             mixer.music.load(videoPath)
             mixer.music.play()   
