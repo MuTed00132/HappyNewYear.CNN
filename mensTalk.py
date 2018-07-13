@@ -57,7 +57,7 @@ dic={"孫爺爺":"孫爺爺新年快樂年年有今日歲歲有今朝",
      "阿妹":"阿妹新年快樂寫信告訴我今夜你要夢什麼"}
 
 for key, value in dic.items():
-  mensTalk(sentence=value,lang="zh",who=key) 
+  mensTalk(sentence=value,lang="zh-TW",who=key) 
   print(key)
   time.sleep(8)
 
