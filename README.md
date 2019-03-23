@@ -45,7 +45,7 @@ sudo python imageStreaming.py
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/A3Z6aCFrGIo/0.jpg)](http://www.youtube.com/watch?v=A3Z6aCFrGIo)
 
 #imageFile模式(影像從檔案來)  
-sudo python imageFile.py  
+python imageFile.py  
 #點一下圖會連到youtube有影音版    
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/iN_6Ya-e-IM/0.jpg)](http://www.youtube.com/watch?v=iN_6Ya-e-IM)
 
